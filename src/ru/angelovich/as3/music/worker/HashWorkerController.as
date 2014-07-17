@@ -28,7 +28,7 @@ public class HashWorkerController extends EventDispatcher {
         _instance = this;
         init();
     }
-    [Embed(source="HashWorker.swf", mimeType="application/octet-stream")]
+    [Embed(source="../../../../../../bin/hashworker.swf", mimeType="application/octet-stream")]
     private var WorkerClass:Class;
     private var _worker:Worker;
     private var _commandChannel:MessageChannel;

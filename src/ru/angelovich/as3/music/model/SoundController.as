@@ -33,7 +33,7 @@ public class SoundController {
     }
 
     public static function get isPlaying():Boolean {
-        return _channel;
+        return _channel != null;
     }
 
     public static function setSource(source:MusicLibraryItem):void {
@@ -72,7 +72,7 @@ public class SoundController {
         }
     }
 
-    private static function playFrom(position:int = 0) {
+    private static function playFrom(position:int = 0) : void {
         if (!_sound) return;
         if (_channel) return;
         _channel = _sound.play(position)

@@ -102,7 +102,7 @@ public class Model extends EventDispatcher {
         savedPlayLists.source = result.savedPlayLists;
     }
 
-    private function init() {
+    private function init() : void {
         _files = new FileModule(new Core().init(CoreConst.ADOBE_SERVER, CoreConst.ADOBE_KEY));
     }
 }

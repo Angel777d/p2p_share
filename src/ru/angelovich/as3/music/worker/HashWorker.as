@@ -14,6 +14,8 @@ import flash.system.MessageChannel;
 import flash.system.Worker;
 import flash.utils.ByteArray;
 
+import ru.angelovich.as3.music.model.MusicLibraryItem;
+
 public class HashWorker extends Sprite {
     public function HashWorker() {
         initialize();
