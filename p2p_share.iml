@@ -32,7 +32,6 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$/../as3corelib">
       <sourceFolder url="file://$MODULE_DIR$/../as3corelib/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../as3corelib/tests/src" isTestSource="true" />
     </content>
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
