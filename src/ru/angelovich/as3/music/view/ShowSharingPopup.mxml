@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+  Created by angel777d on 13.06.2014.
+-->
+<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009"
+               xmlns:s="library://ns.adobe.com/flex/spark"
+               close="closeHandler(event)">
+    <fx:Script><![CDATA[
+        import mx.events.CloseEvent;
+        import mx.managers.PopUpManager;
+
+        private function closeHandler(event:CloseEvent):void {
+            PopUpManager.removePopUp(this);
+        }
+        ]]></fx:Script>
+
+
+    <s:layout>
+        <s:VerticalLayout/>
+    </s:layout>
+
+    <s:HGroup>
+        <s:Button label="all"/>
+        <s:DropDownList prompt="Artists"/>
+        <s:Button label="Artists"/>
+    </s:HGroup>
+
+
+</s:TitleWindow>

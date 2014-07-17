@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+  Created by angel777d on 08.06.2014.
+-->
+<s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009"
+                xmlns:s="library://ns.adobe.com/flex/spark"
+                width="100%">
+
+    <fx:Script>
+        <![CDATA[
+        override public function set data(value:Object):void {
+            super.data = value;
+        }
+        ]]>
+    </fx:Script>
+
+    <s:layout>
+        <s:VerticalLayout/>
+    </s:layout>
+
+    <s:HGroup>
+        <s:Label text="{data.id3Artist}" visible="{data.id3Artist}" includeInLayout="{data.id3Artist}"/>
+        <s:Label text="{data.id3Title}" visible="{data.id3Title}" includeInLayout="{data.id3Title}"/>
+        <s:Label text="{data.id3Album}" visible="{data.id3Album}" includeInLayout="{data.id3Album}"/>
+    </s:HGroup>
+
+    <s:Label text="{data.filename}"/>
+
+    <s:Line width="100%">
+        <s:stroke>
+            <s:SolidColorStroke color="0xCCCCCC" alpha=".5" weight="1"/>
+        </s:stroke>
+    </s:Line>
+
+</s:ItemRenderer>

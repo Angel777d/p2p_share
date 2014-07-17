@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!--
+  Created by angel777d on 13.06.2014.
+-->
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:s="library://ns.adobe.com/flex/spark"
+         enterFrame="enterFrameHandler(event)" creationComplete="creationCompleteHandler(event)">
+
+    <s:layout>
+        <s:VerticalLayout/>
+    </s:layout>
+
+
+    <s:Label id="nameLabel" text="no song"/>
+
+    <s:HGroup>
+        <s:Button label=">" click="playHandler(event)"/>
+        <s:HSlider id="progressBar" change="progressBarChangeHandler(event)"
+                   dragStart="{_canUpdate = false}" dragExit="{_canUpdate = true}"
+                   changeEnd="{_canUpdate = true}" changeStart="{_canUpdate = false}"/>
+        <s:Button label="bwd" click="backHandler(event)"/>
+        <s:Button label="fwd" click="forwardHandler(event)"/>
+    </s:HGroup>
+
+
+    <fx:Script><![CDATA[
+        import mx.events.FlexEvent;
+
+        import ru.angelovich.as3.music.model.Model;
+        import ru.angelovich.as3.music.model.MusicLibraryItem;
+        import ru.angelovich.as3.music.model.PlayList;
+        import ru.angelovich.as3.music.model.SoundController;
+
+        private var _playList:PlayList;
+        private var _currentItem:MusicLibraryItem;
+        private var _canUpdate:Boolean = true;
+
+        private function playHandler(event:MouseEvent):void {
+            if (SoundController.isPlaying) SoundController.pause();
+            else SoundController.play();
+        }
+
+        private function backHandler(event:MouseEvent):void {
+            playIndex(currentPlayIndex - 1);
+        }
+
+        private function forwardHandler(event:MouseEvent):void {
+            playIndex(currentPlayIndex + 1);
+        }
+
+        private function progressBarChangeHandler(event:Event):void {
+            SoundController.goToPosition(progressBar.value);
+        }
+
+        public function set source(item:MusicLibraryItem):void {
+            _currentItem = item;
+            nameLabel.text = item.id3Title ? item.id3Title : item.filename;
+            SoundController.setSource(item);
+            Model.instance.currentItem = item;
+            SoundController.play();
+        }
+
+        public function set playList(value:PlayList):void {
+            _playList = value;
+            if (currentPlayIndex == -1)  playIndex(0);
+        }
+
+        private function get currentPlayIndex():int {
+            var index:int = -1;
+            if (!_currentItem) return index;
+            if (!_playList) return index;
+            index = _playList.items.indexOf(_currentItem);
+            if (index > -1) return index;
+            for each (var item:MusicLibraryItem in _playList.items) {
+                if (item.id == _currentItem.id) return _playList.items.indexOf(item);
+            }
+            return index;
+        }
+
+        private function playIndex(value:int):void {
+            if (!_playList) return;
+            var len:int = _playList.items.length;
+            if (!len) return;
+            if (value >= len) value = 0;
+            if (value < 0) value = len - 1;
+            source = _playList.items[value] as MusicLibraryItem;
+            SoundController.play();
+        }
+
+        private function enterFrameHandler(event:Event):void {
+            if (_canUpdate) {
+                progressBar.maximum = SoundController.length;
+                progressBar.value = SoundController.currentPosition;
+            }
+        }
+
+        private function creationCompleteHandler(event:FlexEvent):void {
+            SoundController.dispatcher.addEventListener(Event.SOUND_COMPLETE, onSoundComplete);
+        }
+
+        private function onSoundComplete(event:Event):void {
+            SoundController.play();
+            //TODO check loop mode here
+        }
+        ]]></fx:Script>
+</s:Group>
