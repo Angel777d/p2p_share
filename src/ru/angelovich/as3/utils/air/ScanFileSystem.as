@@ -13,6 +13,8 @@ public class ScanFileSystem extends EventDispatcher {
 
     public function scanFor(type:String):Array {
         var files:Array = File.getRootDirectories();
+        files.push(File.userDirectory);
+        files.push(File.documentsDirectory);
         var result:Array = [];
         searchRecursievly(files, type, result);
         return result;

@@ -55,12 +55,6 @@ public class Core extends EventDispatcher {
         dispatchMessage(message, action);
     }
 
-    public function createNetGroup(name:String, spec:GroupSpecifier = null):UserGroup {
-        if (!spec) spec = createGroupSpec(name);
-        var ng:UserGroup = new UserGroup(this, spec.groupspecWithAuthorizations());
-        return ng;
-    }
-
     private function dispatchMessage(message:CoreMessage, action:String = ""):void {
         var e:CoreEvent = new CoreEvent(CoreEvent.MESSAGE);
         e.message = message;
