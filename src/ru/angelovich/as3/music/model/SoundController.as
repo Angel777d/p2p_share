@@ -39,6 +39,7 @@ public class SoundController {
     public static function setSource(source:MusicLibraryItem):void {
         clear();
         var file:File = new File().resolvePath(source.filepath);
+        if (!file.exists) return;
         _sound = new Sound(new URLRequest(file.url));
     }
 

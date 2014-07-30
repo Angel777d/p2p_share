@@ -11,25 +11,28 @@ public class ScanFileSystem extends EventDispatcher {
         super(target);
     }
 
-    public function scanFor(type:String):Array {
-        var files:Array = File.getRootDirectories();
-        files.push(File.userDirectory);
-        files.push(File.documentsDirectory);
+    public function scanFiles(types:Array, folders : Array):Array {
         var result:Array = [];
-        searchRecursievly(files, type, result);
+        if (!folders) {
+            folders = File.getRootDirectories();
+            //folders.push(File.userDirectory);
+            //folders.push(File.documentsDirectory);
+        }
+        searchRecursievly(folders, types, result);
         return result;
     }
 
-    private function searchRecursievly(input:Array, type:String, result:Array):void {
+    private function searchRecursievly(input:Array, types:Array, result:Array):void {
         for each (var file:File in input) {
             if (file.isHidden) continue;
-            if (!file.isDirectory) checkFile(file, type, result);
-            else searchRecursievly(file.getDirectoryListing(), type, result);
+            if (!file.isDirectory) checkFile(file, types, result);
+            else searchRecursievly(file.getDirectoryListing(), types, result);
         }
     }
 
-    private function checkFile(file:File, type:String, result:Array):void {
-        if (file.type == type) result.push(file);
+    private function checkFile(file:File, types:Array, result:Array):void {
+        if (!file.type) return;
+        if (types.indexOf(file.type.toLowerCase()) > -1) result.push(file);
     }
 }
 }

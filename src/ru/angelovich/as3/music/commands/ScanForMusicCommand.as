@@ -8,9 +8,8 @@ import flash.filesystem.File;
 import flash.filesystem.FileMode;
 import flash.filesystem.FileStream;
 
-import ru.angelovich.as3.utils.LocalStorage;
 import ru.angelovich.as3.music.model.MusicLibraryItem;
-
+import ru.angelovich.as3.utils.LocalStorage;
 import ru.angelovich.as3.utils.air.ScanFileSystem;
 
 public class ScanForMusicCommand extends ACommand {
@@ -24,7 +23,9 @@ public class ScanForMusicCommand extends ACommand {
 
     override public function processCommand():Object {
         var scanner:ScanFileSystem = new ScanFileSystem();
-        return setResult(processFiles(scanner.scanFor(".mp3")));
+        var files : Array;
+        files = scanner.scanFiles([".mp3"],_params as Array);
+        return setResult(processFiles(files));
     }
 
     private function processFiles(files:Array):Array {

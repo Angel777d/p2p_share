@@ -2,11 +2,15 @@
 <!--
   Created by angel777d on 31.05.2014.
 -->
-<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009"
+<!--s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009"
                xmlns:s="library://ns.adobe.com/flex/spark"
                creationComplete="creationCompleteHandler(event)"
                width="500" height="400"
-               close="close(event)">
+               close="close(event)"-->
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+               xmlns:s="library://ns.adobe.com/flex/spark"
+               creationComplete="creationCompleteHandler(event)"
+               width="500" height="400" >
 
     <fx:Script>
         <![CDATA[
@@ -21,16 +25,18 @@
         private var _library:Object = {};
 
         private function scanHandler(event:MouseEvent):void {
-            Model.instance.scanLibrary();
+            Model.instance.scanLibrary(null);
         }
 
         private function creationCompleteHandler(event:FlexEvent):void {
             Model.instance.loadLibrary();
         }
 
+/*
         private function close(event:Event):void {
             PopUpManager.removePopUp(this);
         }
+*/
 
         private function selectionChangeHandler(event:IndexChangeEvent):void {
             var item:MusicLibraryItem = event.target.dataProvider.getItemAt(event.newIndex) as MusicLibraryItem;
@@ -43,13 +49,20 @@
         <s:VerticalLayout paddingLeft="10" paddingRight="10" paddingTop="5" paddingBottom="5" gap="5"/>
     </s:layout>
 
-    <s:Button label="scan file system" click="scanHandler(event)"/>
+    <s:HGroup width="100%">
+        <s:Button label="All"/>
+        <s:Button label="Artist"/>
+        <s:Button label="Album"/>
+        <s:Spacer width="100%"/>
+        <s:Button label="scan file system" click="scanHandler(event)"/>
+    </s:HGroup>
 
     <s:List width="100%" height="100%" itemRenderer="ru.angelovich.as3.music.view.MusicLibraryItemRenderer"
-            dataProvider="{Model.instance.allCollection}" change="selectionChangeHandler(event)">
+            dataProvider="{Model.instance.musicLibrary}" change="selectionChangeHandler(event)">
         <s:layout>
             <s:VerticalLayout useVirtualLayout="true"/>
         </s:layout>
     </s:List>
 
-</s:TitleWindow>
+<!--/s:TitleWindow-->
+</s:Group>

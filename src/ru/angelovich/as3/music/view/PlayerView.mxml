@@ -7,21 +7,21 @@
          enterFrame="enterFrameHandler(event)" creationComplete="creationCompleteHandler(event)">
 
     <s:layout>
-        <s:VerticalLayout/>
+        <s:HorizontalLayout/>
     </s:layout>
 
+    <s:Button label=">" click="playHandler(event)"/>
 
-    <s:Label id="nameLabel" text="no song"/>
-
-    <s:HGroup>
-        <s:Button label=">" click="playHandler(event)"/>
+    <s:VGroup width="100%">
+        <s:Label id="nameLabel" text="no song"/>
         <s:HSlider id="progressBar" change="progressBarChangeHandler(event)"
                    dragStart="{_canUpdate = false}" dragExit="{_canUpdate = true}"
-                   changeEnd="{_canUpdate = true}" changeStart="{_canUpdate = false}"/>
-        <s:Button label="bwd" click="backHandler(event)"/>
-        <s:Button label="fwd" click="forwardHandler(event)"/>
-    </s:HGroup>
+                   changeEnd="{_canUpdate = true}" changeStart="{_canUpdate = false}"
+                   width="100%"/>
+    </s:VGroup>
 
+    <s:Button label="bwd" click="backHandler(event)"/>
+    <s:Button label="fwd" click="forwardHandler(event)"/>
 
     <fx:Script><![CDATA[
         import mx.events.FlexEvent;
@@ -102,5 +102,6 @@
             SoundController.play();
             //TODO check loop mode here
         }
+
         ]]></fx:Script>
 </s:Group>

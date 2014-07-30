@@ -7,8 +7,10 @@ public class StorableItem {
     public function StorableItem(data:* = null) {
         if (data is String)
             importData(data);
-        else
+        else if (data)
             _data = data;
+        else
+            _data = {};
     }
     protected var _data:Object;
 

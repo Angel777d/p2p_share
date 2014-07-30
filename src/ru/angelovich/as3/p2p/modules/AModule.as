@@ -9,7 +9,6 @@ import flash.events.EventDispatcher;
 import ru.angelovich.as3.p2p.core.Core;
 import ru.angelovich.as3.p2p.core.CoreEvent;
 import ru.angelovich.as3.p2p.core.CoreMessage;
-import ru.angelovich.as3.p2p.core.UserManager;
 
 [Event(name="complete", type="flash.events.Event")]
 public class AModule extends EventDispatcher {
@@ -34,12 +33,8 @@ public class AModule extends EventDispatcher {
         return _core;
     }
 
-    protected function get userManager():UserManager {
-        return UserManager.instance;
-    }
-
     public function destroy():void {
-        _core.removeEventListener(CoreEvent.MESSAGE, onMessage);
+        core.removeEventListener(CoreEvent.MESSAGE, onMessage);
         _core = null;
     }
 
@@ -52,13 +47,13 @@ public class AModule extends EventDispatcher {
     }
 
     private function init():void {
-        _core.addEventListener(CoreEvent.MESSAGE, onMessage);
         initialize();
+        core.addEventListener(CoreEvent.MESSAGE, onMessage);
         dispatchEvent(new Event(Event.COMPLETE));
     }
 
     private function onReady(event:CoreEvent):void {
-        _core.removeEventListener(CoreEvent.READY, onReady);
+        core.removeEventListener(CoreEvent.READY, onReady);
         init();
     }
 

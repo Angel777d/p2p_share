@@ -6,20 +6,17 @@ import ru.angelovich.as3.p2p.core.Core;
 import ru.angelovich.as3.p2p.core.CoreMessage;
 import ru.angelovich.as3.p2p.modules.AModule;
 
-public class SearchModule extends AModule {
+public class ASearchModule extends AModule {
 
-    public function SearchModule(core:Core, name : String = "ASearchModule") {
+    public function ASearchModule(core:Core, name : String = "ASearchModule") {
         super(core, name);
-    }
-
-    override protected function initialize():void {
-
     }
 
     override protected function processMessage(message:CoreMessage):void {
        if (message.module == moduleName) {
+           var searchMessage : SearchMessage = message as SearchMessage;
            if (message.type == SearchMessage.REQUEST)
-                sendResponse(message.from, processRequest(message as SearchMessage));
+                sendResponse(searchMessage);
            if (message.type == SearchMessage.RESPONSE)
                 processResponse(message as SearchMessage);
        }
@@ -41,10 +38,11 @@ public class SearchModule extends AModule {
         core.postMessage(message);
     }
 
-    private function sendResponse(to : String, response : *) {
+    private function sendResponse(request : SearchMessage) {
         var message : SearchMessage = new SearchMessage();
-        message.result = response;
-        message.to = to;
+        message.result = processRequest(request);
+        message.to = request.from;
+        message.description = request.description;
         core.postMessage(message);
     }
 

@@ -14,35 +14,38 @@ import ru.angelovich.as3.music.commands.ScanForMusicCommand;
 import ru.angelovich.as3.p2p.core.Core;
 import ru.angelovich.as3.p2p.core.CoreConst;
 import ru.angelovich.as3.p2p.modules.file.FileModule;
+import ru.angelovich.as3.p2p.modules.search.ASearchModule;
 import ru.angelovich.as3.utils.LocalStorage;
 
 [Bindable]
 public class Model extends EventDispatcher {
-    private static var _model:Model;
+    private static var _model:Model = new Model();
 
     public static function get instance():Model {
-        if (_model) return _model;
-        _model = new Model(checkFunction);
         return _model;
     }
 
-    private static function checkFunction():void {
-        //check singleton;
-    }
-
-    public function Model(check:Function) {
-        if (checkFunction === check) {
-            init();
-        }
-        else {
+    public function Model() {
+        if (_model) {
             throw new Error("it is f*ckng singleton!!!1111");
         }
+        init();
     }
-    private var _files:FileModule;
-    private var _libraryCollection:ArrayCollection = new ArrayCollection();
+
+    private var files:FileModule;
+    private var search:ASearchModule;
+    private var libraryCollection:ArrayCollection = new ArrayCollection();
 
     public function get fileModule():FileModule {
-        return _files;
+        return files;
+    }
+
+    public function get searchModule():ASearchModule {
+        return search;
+    }
+
+    public function get musicLibrary() : ArrayCollection {
+        return libraryCollection;
     }
 
     private var _currentPlayList:PlayList;
@@ -73,26 +76,18 @@ public class Model extends EventDispatcher {
         _savedPlayLists = value;
     }
 
-    public function get allCollection():ArrayCollection {
-        return _libraryCollection;
-    }
-
-    public function set allCollection(value:ArrayCollection):void {
-        _libraryCollection = value;
-    }
-
     private function get customStorage():Object {
         return LocalStorage.getStorageObject("customStorage");
     }
 
     public function loadLibrary():void {
-        _libraryCollection.source = new GetStoredLibraryCommand().processCommand() as Array;
-        _libraryCollection.refresh();
+        libraryCollection.source = new GetStoredLibraryCommand().processCommand() as Array;
+        libraryCollection.refresh();
     }
 
-    public function scanLibrary():void {
-        _libraryCollection.source = new ScanForMusicCommand().processCommand() as Array;
-        _libraryCollection.refresh();
+    public function scanLibrary(sources:Array):void {
+        libraryCollection.source = new ScanForMusicCommand().setParameters(sources).processCommand() as Array;
+        libraryCollection.refresh();
     }
 
     public function loadPlayList():void {
@@ -102,8 +97,10 @@ public class Model extends EventDispatcher {
         savedPlayLists.source = result.savedPlayLists;
     }
 
-    private function init() : void {
-        _files = new FileModule(new Core().init(CoreConst.ADOBE_SERVER, CoreConst.ADOBE_KEY));
+    private function init():void {
+        var core:Core = new Core().init(CoreConst.ADOBE_SERVER, CoreConst.ADOBE_KEY);
+        files = new FileModule(core);
+        search = new SearchMusicModule(core);
     }
 }
 }
