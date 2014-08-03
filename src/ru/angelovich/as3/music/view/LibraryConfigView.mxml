@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+  Created by angel777d on 31.07.2014.
+-->
+<s:TitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark">
+
+    <fx:Script><![CDATA[
+        private function addFolderClick(event:MouseEvent):void {
+            var f : File = File.desktopDirectory;
+            f.addEventListener(Event.SELECT, function (event : Event) : void {
+                if (f.exists && f.isDirectory)
+                    files.addItem(f);
+            });
+            f.browseForDirectory("Select folder");
+        }
+
+        private function removeFolderClick(event:MouseEvent):void {
+
+        }
+
+        ]]></fx:Script>
+
+    <fx:Declarations>
+        <s:ArrayCollection id="files"/>
+    </fx:Declarations>
+
+    <s:layout>
+        <s:VerticalLayout/>
+    </s:layout>
+    <s:HGroup>
+        <s:Label text="Folders to watch"/>
+        <s:Button label="+" click="addFolderClick(event)"/>
+        <s:Button label="-" click="removeFolderClick(event)"/>
+    </s:HGroup>
+    <s:List id="foldersList" dataProvider="{files}"/>
+
+</s:TitleWindow>

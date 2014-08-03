@@ -15,14 +15,15 @@
     <fx:Script>
         <![CDATA[
         import mx.events.FlexEvent;
-        import mx.managers.PopUpManager;
-
         import ru.angelovich.as3.music.model.Model;
         import ru.angelovich.as3.music.model.MusicLibraryItem;
 
         import spark.events.IndexChangeEvent;
 
         private var _library:Object = {};
+
+        [Bindable]
+        private var model : Model = Model.instance;
 
         private function scanHandler(event:MouseEvent):void {
             Model.instance.scanLibrary(null);
@@ -32,37 +33,99 @@
             Model.instance.loadLibrary();
         }
 
-/*
-        private function close(event:Event):void {
-            PopUpManager.removePopUp(this);
-        }
-*/
+        /*
+         private function close(event:Event):void {
+         PopUpManager.removePopUp(this);
+         }
+         */
 
         private function selectionChangeHandler(event:IndexChangeEvent):void {
             var item:MusicLibraryItem = event.target.dataProvider.getItemAt(event.newIndex) as MusicLibraryItem;
             if (item) Model.instance.currentItem = item;
         }
+
+
+        private function allTracks(event:MouseEvent):void {
+            tracksCollection.filterFunction = null;
+            showCategoryList = false;
+            tracksCollection.refresh();
+        }
+
+        private function artists(event:MouseEvent):void {
+            var artists:Array = [];
+            for each (var item:MusicLibraryItem in Model.instance.musicLibrary) {
+                if (artists.indexOf(item.id3Artist) > -1) continue;
+                artists.push(item.id3Artist);
+            }
+            categoryCollection.source = artists;
+            tracksCollection.filterFunction = function (item:MusicLibraryItem):Boolean {
+                return categoryList.selectedItem == item.id3Artist;
+            }
+            showCategoryList = true;
+            tracksCollection.refresh();
+        }
+
+        private function albums(event:MouseEvent):void {
+            var albums:Array = [];
+            for each (var item:MusicLibraryItem in Model.instance.musicLibrary) {
+                if (albums.indexOf(item.id3Album) > -1) continue;
+                albums.push(item.id3Album);
+            }
+            categoryCollection.source = albums;
+            tracksCollection.filterFunction = function (item:MusicLibraryItem):Boolean {
+                return categoryList.selectedItem == item.id3Album;
+            }
+            showCategoryList = true;
+            tracksCollection.refresh();
+        }
+
+        private function categoryChange(event:IndexChangeEvent):void {
+            tracksCollection.refresh();
+        }
+
+        private function categoryLabelFunction(value : String) : String {
+            if (value) return value;
+            return "Other";
+        }
+
         ]]>
     </fx:Script>
+
+    <fx:Declarations>
+        <s:ArrayCollection id="tracksCollection" source="{model.musicLibrary}"/>
+        <s:ArrayCollection id="categoryCollection"/>
+        <fx:Boolean id="showCategoryList">false</fx:Boolean>
+    </fx:Declarations>
 
     <s:layout>
         <s:VerticalLayout paddingLeft="10" paddingRight="10" paddingTop="5" paddingBottom="5" gap="5"/>
     </s:layout>
 
     <s:HGroup width="100%">
-        <s:Button label="All"/>
-        <s:Button label="Artist"/>
-        <s:Button label="Album"/>
+        <s:Button label="All" click="allTracks(event)"/>
+        <s:Button label="Artist" click="artists(event)"/>
+        <s:Button label="Album" click="albums(event)"/>
         <s:Spacer width="100%"/>
         <s:Button label="scan file system" click="scanHandler(event)"/>
     </s:HGroup>
 
-    <s:List width="100%" height="100%" itemRenderer="ru.angelovich.as3.music.view.MusicLibraryItemRenderer"
-            dataProvider="{Model.instance.musicLibrary}" change="selectionChangeHandler(event)">
-        <s:layout>
-            <s:VerticalLayout useVirtualLayout="true"/>
-        </s:layout>
-    </s:List>
+    <s:HGroup width="100%" height="100%">
+        <s:List minWidth="100" height="100%" id="categoryList" labelFunction="categoryLabelFunction"
+                includeInLayout="{showCategoryList}" visible="{showCategoryList}"
+                dataProvider="{categoryCollection}" change="categoryChange(event)">
+            <s:layout>
+                <s:VerticalLayout useVirtualLayout="true"/>
+            </s:layout>
+        </s:List>
+
+        <s:List width="100%" height="100%" itemRenderer="ru.angelovich.as3.music.view.MusicLibraryItemRenderer"
+                dataProvider="{tracksCollection}" change="selectionChangeHandler(event)">
+            <s:layout>
+                <s:VerticalLayout useVirtualLayout="true"/>
+            </s:layout>
+        </s:List>
+
+    </s:HGroup>
 
 <!--/s:TitleWindow-->
 </s:Group>

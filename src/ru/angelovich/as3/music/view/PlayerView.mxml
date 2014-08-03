@@ -34,6 +34,7 @@
         private var _playList:PlayList;
         private var _currentItem:MusicLibraryItem;
         private var _canUpdate:Boolean = true;
+        private var model : Model = Model.instance;
 
         private function playHandler(event:MouseEvent):void {
             if (SoundController.isPlaying) SoundController.pause();
@@ -56,7 +57,7 @@
             _currentItem = item;
             nameLabel.text = item.id3Title ? item.id3Title : item.filename;
             SoundController.setSource(item);
-            Model.instance.currentItem = item;
+            model.currentItem = item;
             SoundController.play();
         }
 

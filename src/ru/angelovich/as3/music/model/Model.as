@@ -17,7 +17,6 @@ import ru.angelovich.as3.p2p.modules.file.FileModule;
 import ru.angelovich.as3.p2p.modules.search.ASearchModule;
 import ru.angelovich.as3.utils.LocalStorage;
 
-[Bindable]
 public class Model extends EventDispatcher {
     private static var _model:Model = new Model();
 
@@ -32,9 +31,11 @@ public class Model extends EventDispatcher {
         init();
     }
 
+    [Bindable]
+    public var musicLibrary:Array = [];
+
     private var files:FileModule;
     private var search:ASearchModule;
-    private var libraryCollection:ArrayCollection = new ArrayCollection();
 
     public function get fileModule():FileModule {
         return files;
@@ -42,10 +43,6 @@ public class Model extends EventDispatcher {
 
     public function get searchModule():ASearchModule {
         return search;
-    }
-
-    public function get musicLibrary() : ArrayCollection {
-        return libraryCollection;
     }
 
     private var _currentPlayList:PlayList;
@@ -58,6 +55,7 @@ public class Model extends EventDispatcher {
     }
 
     private var _currentItem:MusicLibraryItem;
+    [Bindable]
     public function get currentItem():MusicLibraryItem {
         return _currentItem;
     }
@@ -81,13 +79,11 @@ public class Model extends EventDispatcher {
     }
 
     public function loadLibrary():void {
-        libraryCollection.source = new GetStoredLibraryCommand().processCommand() as Array;
-        libraryCollection.refresh();
+        musicLibrary = new GetStoredLibraryCommand().processCommand() as Array;
     }
 
     public function scanLibrary(sources:Array):void {
-        libraryCollection.source = new ScanForMusicCommand().setParameters(sources).processCommand() as Array;
-        libraryCollection.refresh();
+        musicLibrary = new ScanForMusicCommand().setParameters(sources).processCommand() as Array;
     }
 
     public function loadPlayList():void {

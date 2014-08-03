@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12e41ca2-9054-44c0-853f-4979a2848193" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/angelovich/as3/music/model/SearchMusicModule.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/angelovich/as3/music/view/LibraryConfigView.mxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/hashworker.swf" afterPath="$PROJECT_DIR$/bin/hashworker.swf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/music.swf" afterPath="$PROJECT_DIR$/bin/music.swf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/angelovich/as3/p2p/modules/AModule.as" afterPath="$PROJECT_DIR$/src/ru/angelovich/as3/p2p/modules/AModule.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/angelovich/as3/music/Main.mxml" afterPath="$PROJECT_DIR$/src/ru/angelovich/as3/music/Main.mxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/angelovich/as3/music/model/Model.as" afterPath="$PROJECT_DIR$/src/ru/angelovich/as3/music/model/Model.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/angelovich/as3/music/view/MusicLibraryView.mxml" afterPath="$PROJECT_DIR$/src/ru/angelovich/as3/music/view/MusicLibraryView.mxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/angelovich/as3/music/view/PlayerView.mxml" afterPath="$PROJECT_DIR$/src/ru/angelovich/as3/music/view/PlayerView.mxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/angelovich/as3/utils/air/ScanFileSystem.as" afterPath="$PROJECT_DIR$/src/ru/angelovich/as3/utils/air/ScanFileSystem.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/angelovich/as3/music/commands/ScanForMusicCommand.as" afterPath="$PROJECT_DIR$/src/ru/angelovich/as3/music/commands/ScanForMusicCommand.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/angelovich/as3/music/model/SoundController.as" afterPath="$PROJECT_DIR$/src/ru/angelovich/as3/music/model/SoundController.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/angelovich/as3/music/model/StorableItem.as" afterPath="$PROJECT_DIR$/src/ru/angelovich/as3/music/model/StorableItem.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\git\p2p_share\src\ru\angelovich\as3\p2p\modules\search\SearchModule.as" afterPath="$PROJECT_DIR$/src/ru/angelovich/as3/p2p/modules/search/ASearchModule.as" />
     </list>
     <ignored path="p2p_share.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,48 +38,38 @@
       <file leaf-file-name="Main.mxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/angelovich/as3/music/Main.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.769231" vertical-offset="281" max-vertical-offset="748">
-              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+            <state vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="646">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
-                <marker date="1406757213960" expanded="true" signature="346:584" placeholder="..." />
-                <marker date="1406757213960" expanded="true" signature="653:732" placeholder="{...}" />
-                <marker date="1406757213960" expanded="true" signature="805:859" placeholder="{...}" />
-                <marker date="1406757213960" expanded="true" signature="928:1007" placeholder="{...}" />
+                <marker date="1407073190826" expanded="false" signature="346:584" placeholder="..." />
+                <marker date="1407073190826" expanded="true" signature="653:732" placeholder="{...}" />
+                <marker date="1407073190826" expanded="true" signature="805:859" placeholder="{...}" />
+                <marker date="1407073190826" expanded="true" signature="928:1007" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SoundController.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/angelovich/as3/music/model/SoundController.as">
+      <file leaf-file-name="MusicLibraryView.mxml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ru/angelovich/as3/music/view/MusicLibraryView.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1649">
-              <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerView.mxml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ru/angelovich/as3/music/view/PlayerView.mxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537" vertical-offset="986" max-vertical-offset="1921">
-              <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.8360656" vertical-offset="1394" max-vertical-offset="2329">
+              <caret line="112" column="29" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
               <folding>
-                <marker date="1406757158324" expanded="true" signature="915:1168" placeholder="..." />
-                <marker date="1406757158324" expanded="true" signature="1369:1489" placeholder="{...}" />
-                <marker date="1406757158324" expanded="true" signature="1551:1607" placeholder="{...}" />
-                <marker date="1406757158324" expanded="true" signature="1672:1728" placeholder="{...}" />
-                <marker date="1406757158324" expanded="true" signature="1798:1870" placeholder="{...}" />
-                <marker date="1406757158324" expanded="true" signature="1935:2183" placeholder="{...}" />
-                <marker date="1406757158324" expanded="true" signature="2243:2340" placeholder="{...}" />
-                <marker date="1406757158324" expanded="true" signature="2394:2821" placeholder="{...}" />
-                <marker date="1406757158324" expanded="true" signature="2684:2785" placeholder="{...}" />
-                <marker date="1406757158324" expanded="true" signature="2874:3187" placeholder="{...}" />
-                <marker date="1406757158324" expanded="true" signature="3250:3436" placeholder="{...}" />
-                <marker date="1406757158324" expanded="true" signature="3280:3426" placeholder="{...}" />
-                <marker date="1406757158324" expanded="true" signature="3509:3616" placeholder="{...}" />
-                <marker date="1406757158324" expanded="true" signature="3677:3764" placeholder="{...}" />
+                <marker date="1407075334771" expanded="true" signature="597:779" placeholder="..." />
+                <marker date="1407075334771" expanded="true" signature="956:1013" placeholder="{...}" />
+                <marker date="1407075334771" expanded="true" signature="1086:1139" placeholder="{...}" />
+                <marker date="1407075334771" expanded="true" signature="1149:1267" placeholder="/*...*/" />
+                <marker date="1407075334771" expanded="true" signature="1346:1527" placeholder="{...}" />
+                <marker date="1407075334771" expanded="true" signature="1588:1729" placeholder="{...}" />
+                <marker date="1407075334771" expanded="true" signature="1787:2341" placeholder="{...}" />
+                <marker date="1407075334771" expanded="true" signature="1905:2034" placeholder="{...}" />
+                <marker date="1407075334771" expanded="true" signature="2171:2254" placeholder="{...}" />
+                <marker date="1407075334771" expanded="true" signature="2398:2945" placeholder="{...}" />
+                <marker date="1407075334771" expanded="true" signature="2515:2640" placeholder="{...}" />
+                <marker date="1407075334771" expanded="true" signature="2776:2858" placeholder="{...}" />
+                <marker date="1407075334771" expanded="true" signature="3016:3067" placeholder="{...}" />
+                <marker date="1407075334771" expanded="true" signature="3141:3217" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -94,24 +78,33 @@
       <file leaf-file-name="Model.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/angelovich/as3/music/model/Model.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1236" max-vertical-offset="1683">
-              <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1615">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MusicLibraryView.mxml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ru/angelovich/as3/music/view/MusicLibraryView.mxml">
+      <file leaf-file-name="PlayerView.mxml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/angelovich/as3/music/view/PlayerView.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17802198" vertical-offset="348" max-vertical-offset="1258">
-              <caret line="30" column="72" selection-start-line="30" selection-start-column="72" selection-end-line="30" selection-end-column="72" />
+            <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="1938">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding>
-                <marker date="1406757360258" expanded="true" signature="597:821" placeholder="..." />
-                <marker date="1406757360258" expanded="true" signature="926:983" placeholder="{...}" />
-                <marker date="1406757360258" expanded="true" signature="1056:1109" placeholder="{...}" />
-                <marker date="1406757360258" expanded="true" signature="1111:1221" placeholder="/*...*/" />
-                <marker date="1406757360258" expanded="true" signature="1300:1481" placeholder="{...}" />
+                <marker date="1407075241866" expanded="true" signature="915:1168" placeholder="..." />
+                <marker date="1407075241866" expanded="true" signature="1421:1541" placeholder="{...}" />
+                <marker date="1407075241866" expanded="true" signature="1603:1659" placeholder="{...}" />
+                <marker date="1407075241866" expanded="true" signature="1724:1780" placeholder="{...}" />
+                <marker date="1407075241866" expanded="true" signature="1850:1922" placeholder="{...}" />
+                <marker date="1407075241866" expanded="true" signature="1987:2226" placeholder="{...}" />
+                <marker date="1407075241866" expanded="true" signature="2286:2383" placeholder="{...}" />
+                <marker date="1407075241866" expanded="true" signature="2437:2864" placeholder="{...}" />
+                <marker date="1407075241866" expanded="true" signature="2727:2828" placeholder="{...}" />
+                <marker date="1407075241866" expanded="true" signature="2917:3230" placeholder="{...}" />
+                <marker date="1407075241866" expanded="true" signature="3293:3479" placeholder="{...}" />
+                <marker date="1407075241866" expanded="true" signature="3323:3469" placeholder="{...}" />
+                <marker date="1407075241866" expanded="true" signature="3552:3659" placeholder="{...}" />
+                <marker date="1407075241866" expanded="true" signature="3720:3807" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -148,12 +141,14 @@
         <option value="$PROJECT_DIR$/src/ru/angelovich/as3/p2p/modules/AModule.as" />
         <option value="$PROJECT_DIR$/src/ru/angelovich/as3/music/commands/ScanForMusicCommand.as" />
         <option value="$PROJECT_DIR$/src/ru/angelovich/as3/music/view/SelectFoldersForScanView.mxml" />
-        <option value="$PROJECT_DIR$/src/ru/angelovich/as3/music/model/Model.as" />
         <option value="$PROJECT_DIR$/src/ru/angelovich/as3/music/model/StorableItem.as" />
         <option value="$PROJECT_DIR$/src/ru/angelovich/as3/utils/air/ScanFileSystem.as" />
         <option value="$PROJECT_DIR$/src/ru/angelovich/as3/music/model/SoundController.as" />
-        <option value="$PROJECT_DIR$/src/ru/angelovich/as3/music/view/PlayerView.mxml" />
+        <option value="$PROJECT_DIR$/src/ru/angelovich/as3/music/view/LibraryConfigView.as" />
+        <option value="$PROJECT_DIR$/src/ru/angelovich/as3/music/view/LibraryConfigView.mxml" />
         <option value="$PROJECT_DIR$/src/ru/angelovich/as3/music/Main.mxml" />
+        <option value="$PROJECT_DIR$/src/ru/angelovich/as3/music/model/Model.as" />
+        <option value="$PROJECT_DIR$/src/ru/angelovich/as3/music/view/PlayerView.mxml" />
         <option value="$PROJECT_DIR$/src/ru/angelovich/as3/music/view/MusicLibraryView.mxml" />
       </list>
     </option>
@@ -192,6 +187,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -334,8 +331,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -644,12 +639,14 @@
       <workItem from="1405556554803" duration="3358000" />
       <workItem from="1406404231757" duration="9000" />
       <workItem from="1406404305953" duration="17456000" />
-      <workItem from="1406741329342" duration="3434000" />
+      <workItem from="1406741329342" duration="3630000" />
+      <workItem from="1406788077145" duration="4319000" />
+      <workItem from="1407072176020" duration="2772000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24918000" />
+    <option name="totallyTimeSpent" value="32205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -660,6 +657,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928064" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54305977" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -675,11 +673,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24381055" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928064" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32928064" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928064" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -701,7 +698,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -709,19 +706,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ru/angelovich/as3/music/model/StorableItem.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/angelovich/as3/utils/air/ScanFileSystem.as">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
           <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,20 +726,20 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1904">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
-            <marker date="1406757158324" expanded="true" signature="915:1168" placeholder="..." />
-            <marker date="1406757158324" expanded="true" signature="1369:1489" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="1551:1607" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="1672:1728" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="1798:1870" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="1935:2183" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="2243:2340" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="2394:2821" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="2684:2785" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="2874:3187" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="3250:3436" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="3280:3426" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="3509:3616" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="3677:3764" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="915:1168" placeholder="..." />
+            <marker date="1407075241866" expanded="true" signature="1421:1541" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="1603:1659" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="1724:1780" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="1850:1922" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="1987:2226" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="2286:2383" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="2437:2864" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="2727:2828" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="2917:3230" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="3293:3479" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="3323:3469" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="3552:3659" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="3720:3807" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -761,11 +749,20 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1037">
           <caret line="48" column="54" selection-start-line="48" selection-start-column="54" selection-end-line="48" selection-end-column="54" />
           <folding>
-            <marker date="1406757360258" expanded="true" signature="597:821" placeholder="..." />
-            <marker date="1406757360258" expanded="true" signature="926:983" placeholder="{...}" />
-            <marker date="1406757360258" expanded="true" signature="1056:1109" placeholder="{...}" />
-            <marker date="1406757360258" expanded="true" signature="1111:1221" placeholder="/*...*/" />
-            <marker date="1406757360258" expanded="true" signature="1300:1481" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="597:779" placeholder="..." />
+            <marker date="1407075334771" expanded="true" signature="956:1013" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1086:1139" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1149:1267" placeholder="/*...*/" />
+            <marker date="1407075334771" expanded="true" signature="1346:1527" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1588:1729" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1787:2341" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1905:2034" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="2171:2254" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="2398:2945" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="2515:2640" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="2776:2858" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="3016:3067" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="3141:3217" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -782,7 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -791,10 +787,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="765">
           <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
           <folding>
-            <marker date="1406757213960" expanded="true" signature="346:584" placeholder="..." />
-            <marker date="1406757213960" expanded="true" signature="653:732" placeholder="{...}" />
-            <marker date="1406757213960" expanded="true" signature="805:859" placeholder="{...}" />
-            <marker date="1406757213960" expanded="true" signature="928:1007" placeholder="{...}" />
+            <marker date="1407073190826" expanded="false" signature="346:584" placeholder="..." />
+            <marker date="1407073190826" expanded="true" signature="653:732" placeholder="{...}" />
+            <marker date="1407073190826" expanded="true" signature="805:859" placeholder="{...}" />
+            <marker date="1407073190826" expanded="true" signature="928:1007" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -803,7 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1411">
           <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -811,7 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="629">
           <caret line="24" column="29" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -828,11 +822,20 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="935">
           <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
           <folding>
-            <marker date="1406757360258" expanded="true" signature="597:821" placeholder="..." />
-            <marker date="1406757360258" expanded="true" signature="926:983" placeholder="{...}" />
-            <marker date="1406757360258" expanded="true" signature="1056:1109" placeholder="{...}" />
-            <marker date="1406757360258" expanded="true" signature="1111:1221" placeholder="/*...*/" />
-            <marker date="1406757360258" expanded="true" signature="1300:1481" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="597:779" placeholder="..." />
+            <marker date="1407075334771" expanded="true" signature="956:1013" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1086:1139" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1149:1267" placeholder="/*...*/" />
+            <marker date="1407075334771" expanded="true" signature="1346:1527" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1588:1729" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1787:2341" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1905:2034" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="2171:2254" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="2398:2945" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="2515:2640" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="2776:2858" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="3016:3067" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="3141:3217" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -850,10 +853,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="765">
           <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
           <folding>
-            <marker date="1406757213960" expanded="true" signature="346:584" placeholder="..." />
-            <marker date="1406757213960" expanded="true" signature="653:732" placeholder="{...}" />
-            <marker date="1406757213960" expanded="true" signature="805:859" placeholder="{...}" />
-            <marker date="1406757213960" expanded="true" signature="928:1007" placeholder="{...}" />
+            <marker date="1407073190826" expanded="false" signature="346:584" placeholder="..." />
+            <marker date="1407073190826" expanded="true" signature="653:732" placeholder="{...}" />
+            <marker date="1407073190826" expanded="true" signature="805:859" placeholder="{...}" />
+            <marker date="1407073190826" expanded="true" signature="928:1007" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -862,7 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1411">
           <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,7 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="629">
           <caret line="24" column="29" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,11 +888,20 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="935">
           <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
           <folding>
-            <marker date="1406757360258" expanded="true" signature="597:821" placeholder="..." />
-            <marker date="1406757360258" expanded="true" signature="926:983" placeholder="{...}" />
-            <marker date="1406757360258" expanded="true" signature="1056:1109" placeholder="{...}" />
-            <marker date="1406757360258" expanded="true" signature="1111:1221" placeholder="/*...*/" />
-            <marker date="1406757360258" expanded="true" signature="1300:1481" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="597:779" placeholder="..." />
+            <marker date="1407075334771" expanded="true" signature="956:1013" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1086:1139" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1149:1267" placeholder="/*...*/" />
+            <marker date="1407075334771" expanded="true" signature="1346:1527" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1588:1729" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1787:2341" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1905:2034" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="2171:2254" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="2398:2945" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="2515:2640" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="2776:2858" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="3016:3067" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="3141:3217" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -915,7 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1411">
           <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -988,10 +997,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="282" max-vertical-offset="918">
           <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#93#132#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1048,7 +1053,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24765868" vertical-offset="0" max-vertical-offset="961">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1056,7 +1060,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1938">
           <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1064,7 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1072,7 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1394">
           <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1080,7 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
           <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1088,7 +1088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5571" max-vertical-offset="9129">
           <caret line="355" column="0" selection-start-line="355" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1096,7 +1095,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4896" max-vertical-offset="5321">
           <caret line="318" column="0" selection-start-line="318" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1104,6 +1102,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5848" max-vertical-offset="6324">
           <caret line="384" column="0" selection-start-line="384" selection-start-column="0" selection-end-line="385" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/angelovich/as3/music/view/LibraryConfigView.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="731">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1116,60 +1121,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/angelovich/as3/music/view/PlayerView.mxml">
+    <entry file="file://$PROJECT_DIR$/src/ru/angelovich/as3/music/Main.mxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537" vertical-offset="986" max-vertical-offset="1921">
-          <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
+        <state vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="646">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <marker date="1406757158324" expanded="true" signature="915:1168" placeholder="..." />
-            <marker date="1406757158324" expanded="true" signature="1369:1489" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="1551:1607" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="1672:1728" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="1798:1870" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="1935:2183" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="2243:2340" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="2394:2821" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="2684:2785" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="2874:3187" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="3250:3436" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="3280:3426" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="3509:3616" placeholder="{...}" />
-            <marker date="1406757158324" expanded="true" signature="3677:3764" placeholder="{...}" />
+            <marker date="1407073190826" expanded="false" signature="346:584" placeholder="..." />
+            <marker date="1407073190826" expanded="true" signature="653:732" placeholder="{...}" />
+            <marker date="1407073190826" expanded="true" signature="805:859" placeholder="{...}" />
+            <marker date="1407073190826" expanded="true" signature="928:1007" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/angelovich/as3/music/Main.mxml">
+    <entry file="file://$PROJECT_DIR$/src/ru/angelovich/as3/music/view/PlayerView.mxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.769231" vertical-offset="281" max-vertical-offset="748">
-          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="1938">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding>
-            <marker date="1406757213960" expanded="true" signature="346:584" placeholder="..." />
-            <marker date="1406757213960" expanded="true" signature="653:732" placeholder="{...}" />
-            <marker date="1406757213960" expanded="true" signature="805:859" placeholder="{...}" />
-            <marker date="1406757213960" expanded="true" signature="928:1007" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="915:1168" placeholder="..." />
+            <marker date="1407075241866" expanded="true" signature="1421:1541" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="1603:1659" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="1724:1780" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="1850:1922" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="1987:2226" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="2286:2383" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="2437:2864" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="2727:2828" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="2917:3230" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="3293:3479" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="3323:3469" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="3552:3659" placeholder="{...}" />
+            <marker date="1407075241866" expanded="true" signature="3720:3807" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/angelovich/as3/music/model/Model.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1236" max-vertical-offset="1683">
-          <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1615">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/angelovich/as3/music/view/MusicLibraryView.mxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17802198" vertical-offset="348" max-vertical-offset="1258">
-          <caret line="30" column="72" selection-start-line="30" selection-start-column="72" selection-end-line="30" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.8360656" vertical-offset="1394" max-vertical-offset="2329">
+          <caret line="112" column="29" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
           <folding>
-            <marker date="1406757360258" expanded="true" signature="597:821" placeholder="..." />
-            <marker date="1406757360258" expanded="true" signature="926:983" placeholder="{...}" />
-            <marker date="1406757360258" expanded="true" signature="1056:1109" placeholder="{...}" />
-            <marker date="1406757360258" expanded="true" signature="1111:1221" placeholder="/*...*/" />
-            <marker date="1406757360258" expanded="true" signature="1300:1481" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="597:779" placeholder="..." />
+            <marker date="1407075334771" expanded="true" signature="956:1013" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1086:1139" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1149:1267" placeholder="/*...*/" />
+            <marker date="1407075334771" expanded="true" signature="1346:1527" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1588:1729" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1787:2341" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="1905:2034" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="2171:2254" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="2398:2945" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="2515:2640" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="2776:2858" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="3016:3067" placeholder="{...}" />
+            <marker date="1407075334771" expanded="true" signature="3141:3217" placeholder="{...}" />
           </folding>
         </state>
       </provider>
